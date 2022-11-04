@@ -1,0 +1,44 @@
+﻿@model Film
+@{
+}
+
+
+<form asp-action="Create">
+
+    @Html.ValidationMessage("Custom")
+
+
+    <div>
+
+        <label>Id</label>
+        <input asp-for="Id" />
+
+    </div>
+
+    <div>
+
+        <label>Name</label>
+        <input asp-for="Name" />
+
+    </div>
+
+    <div>
+
+        <label>Release</label>
+        <input type="date" asp-for="Release" />
+
+    </div>
+
+    <div>
+
+        <label>Realisateur</label>
+        <input asp-for="Real" />
+
+    </div>
+
+    
+
+    <input type="submit" />
+
+
+</form>
